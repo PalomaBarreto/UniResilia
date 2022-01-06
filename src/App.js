@@ -6,7 +6,7 @@ class App extends Componet
   {
     return
     (
-      
+      <div></div>
     )
   }
 }
