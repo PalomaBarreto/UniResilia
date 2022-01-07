@@ -1,6 +1,12 @@
 /* TESTE*/
-.principal {
-    width: 100px;
-    height: 100px;
+.Principal {
+    display: flex;
+    
+    width: 350px;
+    background-color: pink;
+}
+
+.titulo {
+    width: 150px;
     background-color: aqua;
 }
