@@ -1,12 +1,31 @@
 /* TESTE*/
-.Principal {
+.Principal-Intro {
     display: flex;
-    
-    width: 350px;
-    background-color: pink;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(58, 11, 228);
+    border-radius: 5px  ;
+    border: rgb(0, 0, 0) solid 2px;   
 }
 
-.titulo {
-    width: 150px;
-    background-color: aqua;
+.Texto-Intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Titulo-Intro{
+    
+    color: rgb(235, 181, 6);
+}
+
+.lorem {
+    color: rgb(255, 255, 255);
+}
+
+.Imagem-Intro {
+    
 }

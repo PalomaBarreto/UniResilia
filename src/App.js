@@ -5,8 +5,6 @@ import Intro from "./components/intro"
 function App() {
   return (
     <section>
-      <h1> Fé </h1>
-      <Intro/>
     </section>
   );
 }
