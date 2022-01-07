@@ -1,14 +1,16 @@
 import './App.css';
+import React from 'react';
+import Button from './components/Button';
 
-class App extends Componet
+function App()
 {
-  render()
-  {
-    return
-    (
-      <div></div>
-    )
-  }
+  return(
+    <div>
+      <h1>Funcionei</h1>
+      <Button/>
+
+    </div>
+  )  
 }
 
 export default App;
