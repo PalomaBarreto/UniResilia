@@ -16,7 +16,7 @@ const Btn = styled.button`
   background-color: var(--orange);
   color: var(--navy);
   font-size: 18px;
-  height: 40px;
+  height: 30px;
   padding: 8px 10px;
   border-radius: 5px;
   border: none;
