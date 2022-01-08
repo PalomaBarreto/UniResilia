@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-
+import campus from "./campus.jpg"
 function Intro() {
   return (
     <Titulo>
       <Nome>UNIRESILIA</Nome>
       <P>Lorem ipsum is placeholder text commonly used in the graphic</P>
-      <Img></Img>
+      <Img src={campus}></Img>
     </Titulo>
   );
 }
@@ -16,8 +16,8 @@ const Titulo = styled.div`
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   background-color: #2a1a5e;
   border-radius: 5px;
   border: rgb(0, 0, 0) solid 2px;
@@ -25,6 +25,7 @@ const Titulo = styled.div`
 
 const Nome = styled.h2`
   align-self: start;
+  font-size: 40px;
   color: #fb9224;
 `;
 const P = styled.p`
@@ -32,7 +33,8 @@ const P = styled.p`
   color: white;
 `;
 const Img = styled.img`
-  align-self: start;
+  align-self: end;
+  width: 300px;
   color: white;
 `;
 
