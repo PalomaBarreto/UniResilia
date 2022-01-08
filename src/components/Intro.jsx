@@ -4,14 +4,21 @@ import campus from "../assets/campus.jpg"
 
 function Intro() {
   return (
-    <Titulo>
-      <Nome>UNIRESILIA</Nome>
-      <P>Lorem ipsum is placeholder text commonly used in the graphic</P>
-      <Img src={campus}></Img>
-    </Titulo>
+    <Principal>
+      <Titulo>
+        <Nome>UNIRESILIA</Nome>
+        <P>Lorem ipsum is placeholder text commonly used in the graphic</P>
+        <Img src={campus}></Img>
+      </Titulo>
+    </Principal>
   );
 }
 
+const Principal = styled.div`
+display: flex;
+justify-content: center;
+background-color: #adb5bd;
+`;
 const Titulo = styled.div`
   display: flex;
   justify-content: space-between;
