@@ -6,7 +6,7 @@ import Header from './components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contato from './pages/Contato';
 import AreaProf from './pages/AreaProf';
-import Intro from "./components/Intro";
+
 
 function App()
 {
@@ -15,8 +15,7 @@ function App()
       
       <BrowserRouter>
         <Header/>
-        <Intro/>  
-        <Routes>
+          <Routes>
           <Route path="/" />
           <Route path="/sobre-nos" />
           <Route path="/contato" element={<Contato/>}/>

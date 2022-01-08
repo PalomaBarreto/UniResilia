@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import campus from "../assets/campus.jpg"
 
-function Intro() {
+function Intro(props) {
   return (
     <Titulo>
-      <Nome>UNIRESILIA</Nome>
-      <P>Lorem ipsum is placeholder text commonly used in the graphic</P>
+      <Nome>{props.title}</Nome>
+      <P>{props.description}</P>
       <Img src={campus}></Img>
     </Titulo>
   );
@@ -28,6 +28,7 @@ const Nome = styled.h2`
   align-self: start;
   font-size: 40px;
   color: #fb9224;
+  margin: 20px;
 `;
 const P = styled.p`
   align-self: start;
