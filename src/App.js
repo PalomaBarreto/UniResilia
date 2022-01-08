@@ -1,13 +1,14 @@
 import './App.css';
 import React from 'react';
 import Button from './components/Button';
+import Footer from './components/Footer';
 
 function App()
 {
   return(
     <div>
-      <h1>Funcionei</h1>
       <Button/>
+      <Footer/>
 
     </div>
   )  
