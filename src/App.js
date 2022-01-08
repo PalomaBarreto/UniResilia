@@ -1,32 +1,24 @@
 import './App.css';
 import React from 'react';
-// import Button from './components/Button';
-import Footer from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Intro from './components/Intro';
-import CardHome from './components/CardHome'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 import Contato from './pages/Contato';
-// import Intro from "./components/intro"
 
 function App()
 {
   return(
     <div>
-      
-      <BrowserRouter>
-        <Header/>
+      <Header/>
         <Routes>
-          <Route path="/"S />
+          <Route path="/" element={<Home/>} />
           <Route path="/sobre-nos" />
           <Route path="/contato" element={Contato}/>
           <Route path="/nossas-unidades" />
           <Route path="/login" />  
         </Routes>
-      </BrowserRouter>
-      <Intro/>
-      <CardHome/>
-      <Footer/>
+      <Footer />
     </div>
   )  
 }
