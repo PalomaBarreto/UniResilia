@@ -14,7 +14,7 @@ function Header()
         <Link to="/sobre-nos">Sobre Nós</Link>
         <Link to="/contato">Contato</Link>
         <Link to="/nossas-unidades">Nossas Unidades</Link>
-        <Link to="/login" >Login</Link>
+        <Link to="/area-prof" >Área do Professor</Link>
       </Nav>
       
     </StyledHeader>
@@ -27,12 +27,12 @@ const StyledHeader = styled.header`
 background-color: var(--orange);
 color: var(--navy);
 width: 100%;
-height: 115px;
+height: 100px;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content:space-between ;
-margin-bottom: 20px;
+// margin-bottom: 20px;
 `
 
 const Nav = styled.div`

@@ -5,7 +5,8 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contato from './pages/Contato';
-// import Intro from "./components/intro"
+import AreaProf from './pages/AreaProf';
+import Intro from "./components/Intro";
 
 function App()
 {
@@ -14,16 +15,16 @@ function App()
       
       <BrowserRouter>
         <Header/>
+        <Intro/>  
         <Routes>
-          <Route path="/"S />
+          <Route path="/" />
           <Route path="/sobre-nos" />
           <Route path="/contato" element={<Contato/>}/>
           <Route path="/nossas-unidades" />
-          <Route path="/login" />  
+          <Route path="/area-prof" element={<AreaProf/>}/>  
         </Routes>
       </BrowserRouter>
 
-        
       <Footer/>
 
     </div>
