@@ -4,6 +4,7 @@ import React from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Contato from './pages/Contato';
 // import Intro from "./components/intro"
 
 function App()
@@ -14,9 +15,9 @@ function App()
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="/" />
+          <Route path="/"S />
           <Route path="/sobre-nos" />
-          <Route path="/contato" />
+          <Route path="/contato" element={Contato}/>
           <Route path="/nossas-unidades" />
           <Route path="/login" />  
         </Routes>
