@@ -21,7 +21,7 @@ function App()
           <Route path="/sobre-nos" />
           <Route path="/contato" element={<Contato/>}/>
           <Route path="/nossas-unidades" />
-          <Route path="/area-prof" element={<AreaProf/>}/>  
+          <Route path="/area-prof/*" element={<AreaProf/>}/>  
         </Routes>
       </BrowserRouter>
 

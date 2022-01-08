@@ -1,7 +1,8 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../components/Button";
+import Post from "../components/Post"
 
 function AreaProf()
 {
@@ -12,16 +13,16 @@ function AreaProf()
       <DivBotoes>
         <Button>Buscar Alunos</Button>
         <Button>Buscar Aluno por ID</Button>
-        <Link to="post" >
+        <NavLink to="post" >
           <Button>Adicionar</Button>  
-        </Link>
-        <Link to="delete">
+        </NavLink>
+        <NavLink to="delete">
           <Button>Deletar</Button>
-        </Link>
+        </NavLink>
       </DivBotoes>
           
       <Routes>
-          <Route path="/area-prof/post" />
+          <Route path="/post" element={<Post/>} />
           <Route path="/area-prof/delete" />
       </Routes>
               
