@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
-// import Button from './components/Button';
-import Footer from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 import Contato from './pages/Contato';
 import AreaProf from './pages/AreaProf';
 
@@ -12,19 +12,17 @@ function App()
 {
   return(
     <div>
-      
-      <BrowserRouter>
+     
         <Header/>
-          <Routes>
-          <Route path="/" />
+        <Routes>
+          <Route path="/" element={<Home/>} />
           <Route path="/sobre-nos" />
           <Route path="/contato" element={<Contato/>}/>
           <Route path="/nossas-unidades" />
           <Route path="/area-prof/*" element={<AreaProf/>}/>  
         </Routes>
-      </BrowserRouter>
 
-      <Footer/>
+      <Footer />
 
     </div>
   )  

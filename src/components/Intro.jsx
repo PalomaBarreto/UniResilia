@@ -4,20 +4,27 @@ import campus from "../assets/campus.jpg"
 
 function Intro(props) {
   return (
-    <Titulo>
-      <Nome>{props.title}</Nome>
-      <P>{props.description}</P>
-      <Img src={campus}></Img>
-    </Titulo>
+    <Principal>
+      <Titulo>
+        <Nome>{props.title}</Nome>
+        <P>{props.description}</P>
+        <Img src={campus}></Img>
+      </Titulo>
+    </Principal>
   );
 }
 
+const Principal = styled.div`
+display: flex;
+justify-content: center;
+
+`;
 const Titulo = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  // width: 600px;
+  width: 100%;
   height: 250px;
   background-color: #2a1a5e;
   // border-radius: 5px;
