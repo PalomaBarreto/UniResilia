@@ -1,3 +1,3 @@
-import Intro from "./intro.jsx";
+import Intro from "./Intro.jsx";
 
 export default Intro

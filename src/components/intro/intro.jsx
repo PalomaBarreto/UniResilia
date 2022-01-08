@@ -1,9 +1,9 @@
-import "./style.css"
-import React, { Component } from "react";
-import campus from './campus.png'
+import React from 'react'
+import styled from "styled-components";
+import Style from './Style'
 
-export default class Intro extends Component{
-    render(){
+
+export default function Intro(){
         return(
             <div className="Principal-Intro">
                 <div className="Texto-Intro">
@@ -16,5 +16,4 @@ export default class Intro extends Component{
                 <img src={campus} alt="campus" width="300px" className="Imagem-Intro"></img>
             </div>
         )
-    }
 }
