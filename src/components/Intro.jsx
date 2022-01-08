@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import campus from "./campus.jpg"
+import campus from "../assets/campus.jpg"
 function Intro() {
   return (
     <Titulo>
