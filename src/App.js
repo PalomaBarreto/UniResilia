@@ -17,7 +17,7 @@ function App()
         <Routes>
           <Route path="/"S />
           <Route path="/sobre-nos" />
-          <Route path="/contato" element={Contato}/>
+          <Route path="/contato" element={<Contato/>}/>
           <Route path="/nossas-unidades" />
           <Route path="/login" />  
         </Routes>
