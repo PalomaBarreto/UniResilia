@@ -5,20 +5,25 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contato from './pages/Contato';
+import AreaProf from './pages/AreaProf';
+import Intro from "./components/Intro";
 
 function App()
 {
   return(
     <div>
-      <Header/>
+     
+        <Header/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/sobre-nos" />
-          <Route path="/contato" element={Contato}/>
+          <Route path="/contato" element={<Contato/>}/>
           <Route path="/nossas-unidades" />
-          <Route path="/login" />  
+          <Route path="/area-prof/*" element={<AreaProf/>}/>  
         </Routes>
+
       <Footer />
+
     </div>
   )  
 }

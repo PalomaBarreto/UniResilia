@@ -12,7 +12,7 @@ function Contato(){
     <Input>E-mail: </Input>
     <Input>Nome da mãe: </Input>
     <Input>CPF: </Input>
-    <Button>Toma no cu caralho!</Button>
+    <Button>Enviar!</Button>
     
     </Container>
   )

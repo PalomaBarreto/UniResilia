@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import campus from "../assets/campus.jpg"
+
 function Intro() {
   return (
     <Principal>
@@ -23,11 +24,11 @@ const Titulo = styled.div`
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 600px;
-  height: 400px;
+  // width: 600px;
+  height: 250px;
   background-color: #2a1a5e;
-  border-radius: 5px;
-  border: rgb(0, 0, 0) solid 2px;
+  // border-radius: 5px;
+  // border: rgb(0, 0, 0) solid 2px;
 `;
 
 const Nome = styled.h2`
@@ -41,7 +42,7 @@ const P = styled.p`
 `;
 const Img = styled.img`
   align-self: end;
-  width: 300px;
+  width: 200px;
   color: white;
 `;
 
