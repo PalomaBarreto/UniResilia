@@ -9,43 +9,39 @@ function Footer()
     <Ftr>
     <ImgLogo src={logo} alt="logomarca" className="image"/>
     <Icons>
-      <BsInstagram size="25" color="#2A1A5E"/>
-      <BsLinkedin size="25" color="#2A1A5E"/>
-      <BsGithub size="25" color="#2A1A5E"/>
+    <BsInstagram size="25" color="#2A1A5E"/>
+    <BsLinkedin size="25" color="#2A1A5E"/>
+    <BsGithub size="25" color="#2A1A5E"/>
     </Icons>
-    <Parag>&copy; 2022 - Alguns direitos reservados. Página desenvolvida para fins didáticos.</Parag>
+    <p>&copy; 2022 - Alguns direitos reservados. Página desenvolvida para fins didáticos.</p>
     
     </Ftr>
-    )
-  }
+  )
+}
   
-  export default Footer
+export default Footer
   
-  const Ftr = styled.footer`
-  background-color: var(--orange);
-  color: var(--navy);
-  height: 175px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+const Ftr = styled.footer`
+background-color: var(--orange);
+color: var(--navy);
+height: 175px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
   
-  `;
-
-  const Icons = styled.div`
-  width: 10rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0px 10px;
+`;
   
-  `;
-
-  const Parag = styled.p`
-
-  `;
-
-  const ImgLogo = styled.img`
-  height: 420px;
-  width: 210px;
-  `;
+const Icons = styled.div`
+width: 10rem;
+display: flex;
+justify-content: space-between;
+padding: 20px 0px 10px;
+  
+`;
+  
+const ImgLogo = styled.img`
+height: 420px;
+width: 210px;
+`;
