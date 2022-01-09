@@ -32,8 +32,7 @@ height: 100px;
 display: flex;
 flex-direction: row;
 align-items: center;
-justify-content:space-between ;
-
+justify-content:space-between;
 `
 
 const Nav = styled.div`
@@ -43,9 +42,6 @@ align-items: center;
 justify-content:space-between;
 padding: 20px;
 cursor: pointer;
-&:hover {
-  color: var(yellow);
- 
 `
 const StyledLink = styled(Link)`
   font-size: 20px;
@@ -54,7 +50,7 @@ const StyledLink = styled(Link)`
   transition: all .3s;
   &:hover {
     color: var(--yellow);
-    transform: scale(1.2) ;
+    transform: scale(1.2);
   }
 `
 
