@@ -1,35 +1,49 @@
 import React from "react";
 import styled from "styled-components";
-
+import contato from "../assets/contato.png";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import Intro from "../components/Intro";
+import Textarea from "../components/Textarea";
 
-function Contato(){
-  return(
+function Contato() {
+  return (
     <div>
-      <Intro description={"Alguma baboseira"} title={"Em que podemos te ajudar?"} />
+      <Intro
+        description={
+          "Sinta-se livre para deixar sua dúvida, sugestão ou elogio."
+        }
+        title={"Em que podemos te ajudar?"}
+      />
       <Container>
-      <Input>Nome: </Input>
-      <Input>Telefone: </Input>
-      <Input>E-mail: </Input>
-      <Input>Nome da mãe: </Input>
-      <Input>CPF: </Input>
-      <Button>Enviar!</Button>
-      
+        <ImgContato src={contato}></ImgContato>
+        <Form>
+          <Input type={"text"}>Nome Completo: </Input>
+          <Input type={"email"}>E-mail: </Input>
+          <Input type={"tel"}>Celular: </Input>
+          <Textarea>Mensagem:</Textarea>
+          <Button type={"submit"}>Enviar!</Button>
+        </Form>
       </Container>
-
     </div>
-  )
+  );
 }
 
 const Container = styled.section`
-display: flex;
-flex-direction: column;
-heigth: 40%;
-align-items: center;
-margin: 20px
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+const ImgContato = styled.img``;
+const Form = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  margin: 30px;
+  background-color: var(--yellow);
+  box-shadow: 15px 15px 5px var(--navy);
+  border-radius: 5px;
+`;
 
-`
-  
-export default Contato
+export default Contato;

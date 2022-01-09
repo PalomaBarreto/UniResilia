@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import campus from "../assets/campus.jpg"
+import campus from "../assets/campus.jpg";
 
 function Intro(props) {
   return (
@@ -15,48 +15,43 @@ function Intro(props) {
 }
 
 const Principal = styled.section`
-margin-top: 3px;
-background-color: var(--navy);
-box-shadow: 5px 7px 10px var(--navy);
-display: flex;
-justify-content: center;
-align-content: center;
-height: 270px;
-display: flex;
-justify-content: sapce-evenly;
-flex-direction: column;
-flex-wrap: wrap;
-
+  margin-top: 3px;
+  background-color: var(--navy);
+  box-shadow: 5px 7px 10px var(--navy);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 270px;
+  display: flex;
+  justify-content: sapce-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
 `;
 const Titulo = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 60%;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
 `;
-
 const Nome = styled.h2`
-align-self: start;
-font-size: 40px;
-color: #fb9224;
-margin: 20px;
-text-shadow: 1px 1px 4px var(--yellow);
+  align-self: start;
+  font-size: 40px;
+  color: #fb9224;
+  margin: 20px;
+  text-shadow: 1px 1px 4px var(--yellow);
 `;
-
 const P = styled.p`
   align-self: start;
   color: white;
   margin: 20px;
   font-size: 20px;
 `;
-
 const Img = styled.img`
   align-self: end;
   height: 250px;
   box-shadow: 5px 7px 10px var(--black);
-  border-radius: 5px; 
+  border-radius: 5px;
   margin: 20px;
   animation: go-back 1s;
 
@@ -67,9 +62,7 @@ const Img = styled.img`
     to {
       transform: translateX(0);
     }
-  } 
+  }
 `;
-
-
 
 export default Intro;
