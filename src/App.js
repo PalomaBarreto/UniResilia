@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contato from './pages/Contato';
 import AreaProf from './pages/AreaProf';
-
+import QuemSomos from './pages/QuemSomos';
 
 function App()
 {
@@ -16,7 +16,7 @@ function App()
         <Header/>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/sobre-nos" />
+          <Route path="/sobre-nos" element={<QuemSomos/>}/>
           <Route path="/contato" element={<Contato/>}/>
           <Route path="/nossas-unidades" />
           <Route path="/area-prof/*" element={<AreaProf/>}/>  
