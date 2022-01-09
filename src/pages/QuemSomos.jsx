@@ -4,20 +4,46 @@ import gente from "../assets/gente.png";
 import excelencia from "../assets/excelencia.png";
 import inovacao from "../assets/inovacao.png";
 import foco from "../assets/foco.png";
+<<<<<<< HEAD
 function SobreNos() {
+=======
+import foto from "../assets/inst.jpg"
+import Intro from "../components/Intro";
+
+function QuemSomos() {
+>>>>>>> 6c0477b416bd108ad1f03c32bdafabe32449bdfb
   return (
-    <DivMain>
+    <div>
+      <Intro description={"Alguma baboseira"} title={"A melhor universidade Tech do Brasil!"} />
       <TituloInstitucional>Institucional</TituloInstitucional>
       <TextoInstitucional>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+    
+A UniResilia nasceu sob o signo da inovação pedagógica.
+
+Essa característica fundamental, nos permite uma evolução constante para ajustar a formação do aluno às transformações tecnológicas, às necessidades do mercado e à revolução do conhecimento do século XXI.
+
+Proporcionamos uma formação profissional de alta qualidade, fornecendo a base para que os alunos possam se renovar e permanecerem atualizados num mundo em constante transformação.
+Nosso compromisso é, portanto, oferecer ensino de excelência adequado às novas realidades do Brasil e do mundo. Antes de tudo, trabalhamos incansavelmente para:
+<ul>
+  <li>Preparar nossos alunos para uma vida profissional de sucesso, que permita a conquista de posições de destaque no mercado de trabalho;
+</li>
+  <li>Transmitir e cultivar valores como trabalho dedicado, solidariedade, honestidade, lealdade, apreço pela cultura e respeito à diversidade;
+</li>
+  <li>Formar cidadãos plenos, capazes de ajudar a transformar o Brasil em um país economicamente próspero, socialmente justo e democrático.
+</li>
+</ul>
+Para inovar o ensino universitário e capacitar os alunos para enfrentar os desafios da empregabilidade, a FACAMP oferece:
+
+<ul>
+  <li>Direção competente e experiente no desenvolvimento do ensino de excelência, sintonizada com o mundo em transformação e na vanguarda das novas tendências educacionais;
+</li>
+  <li>Professores altamente qualificados, conectados ao mercado de trabalho e que gostam de ensinar e aprender;
+</li>
+  <li>Ensino personalizado e não de massa, o que permite contato estreito entre coordenadores, professores e alunos, além de ajudar a identificar e maximizar o potencial de cada aluno;
+</li>
+</ul>
+
+
       </TextoInstitucional>
 
       <DivCards>
@@ -54,11 +80,10 @@ function SobreNos() {
           </TextoCards>
         </CardQuem>
       </DivCards>
-    </DivMain>
+      <Img src={foto}></Img>
+    </div>
   );
 }
-
-const DivMain = styled.main``;
 
 const TituloInstitucional = styled.h1`
   text-align: center;
@@ -73,6 +98,8 @@ const TextoInstitucional = styled.p`
   color: #001b44;
   font-size: 20px;
   margin-bottom: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
 `;
 
 const Icone = styled.img`
@@ -87,10 +114,10 @@ const Icone2 = styled.img`
 `;
 const DivCards = styled.div`
   display: flex;
-  align-itens: center;
+  align-items: center;
   justify-content: space-around;
-  background-color: #2a1a5e;
-  margin-bottom: 150px;
+  background-color: var(--navy);
+  
 `;
 
 const CardQuem = styled.div`
@@ -114,4 +141,13 @@ const TextoCards = styled.p`
   line-height: 1.2rem;
 `;
 
+<<<<<<< HEAD
 export default SobreNos;
+=======
+const Img = styled.img`
+height: 300px;
+width: 100%;
+`
+
+export default QuemSomos;
+>>>>>>> 6c0477b416bd108ad1f03c32bdafabe32449bdfb

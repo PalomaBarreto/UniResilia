@@ -13,7 +13,7 @@ function Footer()
     <BsLinkedin size="25" color="#2A1A5E"/>
     <BsGithub size="25" color="#2A1A5E"/>
     </Icons>
-    <p>&copy; 2022 - Alguns direitos reservados. Página desenvolvida para fins didáticos.</p>
+    <p>&copy; 2022 - Todos os direitos reservados. Página desenvolvida para fins didáticos.</p>
     
     </Ftr>
   )
@@ -24,12 +24,13 @@ export default Footer
 const Ftr = styled.footer`
 background-color: var(--orange);
 color: var(--navy);
-height: 170px;
+height: 175px;
 padding: 10px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
+box-shadow: 0 0 1em var(--black);
   
 `;
   

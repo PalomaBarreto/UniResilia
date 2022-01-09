@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Input from "./Input";
+import Button from "./Button";
 
 function Post()
 {
@@ -11,6 +12,7 @@ function Post()
       <Input type={"text"}>CPF: </Input>
       <Input type={"text"}>E-mail: </Input>
       <Input type={"text"}>Curso: </Input>
+      <Button>Adicionar!</Button>
     </Form>
   )    
 }

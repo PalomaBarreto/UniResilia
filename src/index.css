@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  
 }
 
 :root
 {
   --orange: #F45905;
-  --navy: #2A1A5E;
+  --orange: #f45905;
   --yellow: #FBE555;
+  
+  font-family: 'Raleway', sans-serif;;
+  
+}
 
-  font-family: 'Padauk', sans-serif;
+a {
+  text-decoration: none;
   
 }
