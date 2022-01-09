@@ -4,7 +4,7 @@ import gente from "../assets/gente.png";
 import excelencia from "../assets/excelencia.png";
 import inovacao from "../assets/inovacao.png";
 import foco from "../assets/foco.png";
-function QuemSomos() {
+function SobreNos() {
   return (
     <DivMain>
       <TituloInstitucional>Institucional</TituloInstitucional>
@@ -114,4 +114,4 @@ const TextoCards = styled.p`
   line-height: 1.2rem;
 `;
 
-export default QuemSomos;
+export default SobreNos;
