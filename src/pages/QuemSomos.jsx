@@ -4,9 +4,13 @@ import gente from "../assets/gente.png";
 import excelencia from "../assets/excelencia.png";
 import inovacao from "../assets/inovacao.png";
 import foco from "../assets/foco.png";
+import foto from "../assets/inst.jpg"
+import Intro from "../components/Intro";
+
 function QuemSomos() {
   return (
-    <DivMain>
+    <div>
+      <Intro description={"Alguma baboseira"} title={"A melhor universidade Tech do Brasil!"} />
       <TituloInstitucional>Institucional</TituloInstitucional>
       <TextoInstitucional>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -54,11 +58,10 @@ function QuemSomos() {
           </TextoCards>
         </CardQuem>
       </DivCards>
-    </DivMain>
+      <Img src={foto}></Img>
+    </div>
   );
 }
-
-const DivMain = styled.main``;
 
 const TituloInstitucional = styled.h1`
   text-align: center;
@@ -89,8 +92,8 @@ const DivCards = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #2a1a5e;
-  margin-bottom: 150px;
+  background-color: var(--navy);
+  
 `;
 
 const CardQuem = styled.div`
@@ -113,5 +116,10 @@ const TextoCards = styled.p`
   font-size: 1.4rem;
   line-height: 1.2rem;
 `;
+
+const Img = styled.img`
+height: 300px;
+width: 100%;
+`
 
 export default QuemSomos;
