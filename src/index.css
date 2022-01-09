@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  
 }
 
 :root
 {
+  --salmon: #FFB944;
   --orange: #F45905;
   --navy: #2A1A5E;
   --yellow: #FBE555;
 
-  font-family: 'Padauk', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   
 }

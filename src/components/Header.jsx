@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 
 function Header()
 {
@@ -41,6 +41,12 @@ display: flex;
 align-items: center;
 justify-content:space-between;
 padding: 20px
+cursor: pointer;
+&:hover {
+  color: var(yellow);
+ 
+
+
 `
 
 const ImgLogo = styled.img`

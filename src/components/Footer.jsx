@@ -24,7 +24,7 @@ export default Footer
 const Ftr = styled.footer`
 background-color: var(--orange);
 color: var(--navy);
-height: 170px;
+height: 175px;
 padding: 10px;
 display: flex;
 flex-direction: column;

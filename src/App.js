@@ -8,6 +8,7 @@ import Contato from './pages/Contato';
 import AreaProf from './pages/AreaProf';
 import Intro from "./components/Intro";
 import QuemSomos from './pages/QuemSomos';
+import Unidades from './pages/Unidades';
 
 function App()
 {
@@ -19,7 +20,7 @@ function App()
           <Route path="/" element={<Home/>} />
           <Route path="/sobre-nos" element={<QuemSomos/>}/>
           <Route path="/contato" element={<Contato/>}/>
-          <Route path="/nossas-unidades" />
+          <Route path="/nossas-unidades" element={<Unidades/>}/>
           <Route path="/area-prof/*" element={<AreaProf/>}/>  
         </Routes>
 

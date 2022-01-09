@@ -24,6 +24,7 @@ flex-direction: column;
 heigth: 40%;
 align-items: center;
 margin: 20px
+
 `
   
 export default Contato
