@@ -5,7 +5,7 @@ import CardHome from '../components/CardHome';
 export default function Home() {
     return (
         <div>
-            <Intro />
+            <Intro description={"Alguma baboseira"} title={"A melhor universidade Tech do Brasil!"} />
             <CardHome />
         </div>
     )

@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contato from './pages/Contato';
 import AreaProf from './pages/AreaProf';
-import Intro from "./components/Intro";
 import QuemSomos from './pages/QuemSomos';
 import Unidades from './pages/Unidades';
 

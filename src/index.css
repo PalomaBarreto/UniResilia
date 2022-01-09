@@ -11,11 +11,15 @@
 
 :root
 {
-  --salmon: #FFB944;
   --orange: #F45905;
-  --navy: #2A1A5E;
+  --orange: #f45905;
   --yellow: #FBE555;
+  
+  font-family: 'Raleway', sans-serif;;
+  
+}
 
-  font-family: 'Roboto Condensed', sans-serif;
+a {
+  text-decoration: none;
   
 }

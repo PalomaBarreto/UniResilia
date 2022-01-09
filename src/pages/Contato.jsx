@@ -3,18 +3,23 @@ import styled from "styled-components";
 
 import Input from "../components/Input";
 import Button from "../components/Button";
+import Intro from "../components/Intro";
 
 function Contato(){
   return(
-    <Container>
-    <Input>Nome: </Input>
-    <Input>Telefone: </Input>
-    <Input>E-mail: </Input>
-    <Input>Nome da mãe: </Input>
-    <Input>CPF: </Input>
-    <Button>Enviar!</Button>
-    
-    </Container>
+    <div>
+      <Intro description={"Alguma baboseira"} title={"Em que podemos te ajudar?"} />
+      <Container>
+      <Input>Nome: </Input>
+      <Input>Telefone: </Input>
+      <Input>E-mail: </Input>
+      <Input>Nome da mãe: </Input>
+      <Input>CPF: </Input>
+      <Button>Enviar!</Button>
+      
+      </Container>
+
+    </div>
   )
 }
 
