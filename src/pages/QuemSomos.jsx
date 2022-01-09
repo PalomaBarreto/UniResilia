@@ -4,10 +4,14 @@ import gente from "../assets/gente.png";
 import excelencia from "../assets/excelencia.png";
 import inovacao from "../assets/inovacao.png";
 import foco from "../assets/foco.png";
+<<<<<<< HEAD
+function SobreNos() {
+=======
 import foto from "../assets/inst.jpg"
 import Intro from "../components/Intro";
 
 function QuemSomos() {
+>>>>>>> 6c0477b416bd108ad1f03c32bdafabe32449bdfb
   return (
     <div>
       <Intro description={"Alguma baboseira"} title={"A melhor universidade Tech do Brasil!"} />
@@ -137,9 +141,13 @@ const TextoCards = styled.p`
   line-height: 1.2rem;
 `;
 
+<<<<<<< HEAD
+export default SobreNos;
+=======
 const Img = styled.img`
 height: 300px;
 width: 100%;
 `
 
 export default QuemSomos;
+>>>>>>> 6c0477b416bd108ad1f03c32bdafabe32449bdfb
