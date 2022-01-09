@@ -8,43 +8,74 @@ function Intro(props) {
       <Titulo>
         <Nome>{props.title}</Nome>
         <P>{props.description}</P>
-        <Img src={campus}></Img>
       </Titulo>
+      <Img src={campus}></Img>
     </Principal>
   );
 }
 
-const Principal = styled.div`
+const Principal = styled.section`
+margin-top: 3px;
+background-color: var(--navy);
 display: flex;
 justify-content: center;
+align-content: center;
+height: 270px;
+display: flex;
+justify-content: sapce-evenly;
+flex-direction: column;
+flex-wrap: wrap;
 
 `;
 const Titulo = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 250px;
-  background-color: #2a1a5e;
-  // border-radius: 5px;
-  // border: rgb(0, 0, 0) solid 2px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 60%;
+animation: move 1s;
+
+@keyframes move {
+  from {
+    left: 2%;
+  }
+  to {
+    left: 85%;
+  }
+}
+
 `;
 
 const Nome = styled.h2`
-  align-self: start;
-  font-size: 40px;
-  color: #fb9224;
-  margin: 20px;
+align-self: start;
+font-size: 40px;
+color: #fb9224;
+margin: 20px;
+text-shadow: 1px 1px 4px var(--yellow);
 `;
 const P = styled.p`
   align-self: start;
   color: white;
+  margin: 20px;
 `;
 const Img = styled.img`
   align-self: end;
-  width: 200px;
-  color: white;
+  height: 250px;
+  box-shadow: 5px 7px 10px var(--black);
+  border-radius: 5px; 
+  margin: 20px;
+  animation: go-back 1s;
+
+  @keyframes go-back {
+    from {
+      transform: translateX(400px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
 `;
+
+
 
 export default Intro;

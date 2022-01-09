@@ -7,10 +7,17 @@
 
 :root
 {
-  --orange: #F45905;
+  --orange: #f45905;
   --navy: #2A1A5E;
   --yellow: #FBE555;
+  --black: #000000;
+  
+  font-family: 'Raleway', sans-serif;;
+  
+}
 
-  font-family: 'Padauk', sans-serif;
+a
+{
+  text-decoration: none;
   
 }
