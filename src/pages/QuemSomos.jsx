@@ -91,12 +91,10 @@ const TituloInstitucional = styled.h1`
   margin: 70px 0px 50px 0px;
   text-shadow: 1px 1px 4px var(--navy);
 `;
-
 const Lista = styled.ul`
 margin-top: 30px;
 list-style: none;
-`
-
+`;
 const TextoInstitucional = styled.p`
   text-align: center;
   color: var(--navy);
@@ -120,7 +118,6 @@ const DivCards = styled.div`
   justify-content: space-around;
   background-color: var(--navy);
 `;
-
 const CardQuem = styled.div`
   text-align: center;
   border-radius: 10px;
@@ -129,7 +126,6 @@ const CardQuem = styled.div`
   height: 300px;
   justify-self: center;
 `;
-
 const TituloCards = styled.h1`
   font-size: 35px;
   margin-bottom: 05 px;
@@ -141,12 +137,10 @@ const TextoCards = styled.p`
   font-size: 1.4rem;
   line-height: 1.2rem;
 `;
-
 const DivImg = styled.div`
   text-align: center;
   height: 438px
-`
-
+`;
 const Img = styled.img`
   height: 500px;
   width: 60%;
