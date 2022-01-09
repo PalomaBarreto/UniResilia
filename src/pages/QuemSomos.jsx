@@ -4,44 +4,48 @@ import gente from "../assets/gente.png";
 import excelencia from "../assets/excelencia.png";
 import inovacao from "../assets/inovacao.png";
 import foco from "../assets/foco.png";
-import foto from "../assets/inst.jpg"
+import foto from "../assets/bg.png";
 import Intro from "../components/Intro";
+import { BsCodeSlash } from "react-icons/bs";
 
 function QuemSomos() {
   return (
     <div>
-      <Intro description={"Alguma baboseira"} title={"A melhor universidade Tech do Brasil!"} />
+      <Intro
+        description={"Aqui você encontra o caminho certo para um futuro brilhante."}
+        title={"A melhor universidade Tech do Brasil!"}
+      />
       <TituloInstitucional>Institucional</TituloInstitucional>
       <TextoInstitucional>
-    
-A UniResilia nasceu sob o signo da inovação pedagógica.
-
-Essa característica fundamental, nos permite uma evolução constante para ajustar a formação do aluno às transformações tecnológicas, às necessidades do mercado e à revolução do conhecimento do século XXI.
-
-Proporcionamos uma formação profissional de alta qualidade, fornecendo a base para que os alunos possam se renovar e permanecerem atualizados num mundo em constante transformação.
-Nosso compromisso é, portanto, oferecer ensino de excelência adequado às novas realidades do Brasil e do mundo. Antes de tudo, trabalhamos incansavelmente para:
-<ul>
-  <li>Preparar nossos alunos para uma vida profissional de sucesso, que permita a conquista de posições de destaque no mercado de trabalho;
-</li>
-  <li>Transmitir e cultivar valores como trabalho dedicado, solidariedade, honestidade, lealdade, apreço pela cultura e respeito à diversidade;
-</li>
-  <li>Formar cidadãos plenos, capazes de ajudar a transformar o Brasil em um país economicamente próspero, socialmente justo e democrático.
-</li>
-</ul>
-Para inovar o ensino universitário e capacitar os alunos para enfrentar os desafios da empregabilidade, a FACAMP oferece:
-
-<ul>
-  <li>Direção competente e experiente no desenvolvimento do ensino de excelência, sintonizada com o mundo em transformação e na vanguarda das novas tendências educacionais;
-</li>
-  <li>Professores altamente qualificados, conectados ao mercado de trabalho e que gostam de ensinar e aprender;
-</li>
-  <li>Ensino personalizado e não de massa, o que permite contato estreito entre coordenadores, professores e alunos, além de ajudar a identificar e maximizar o potencial de cada aluno;
-</li>
-</ul>
-
-
+        A UniResilia nasceu sob o signo da inovação pedagógica. Essa
+        característica fundamental, nos permite uma evolução constante para
+        ajustar a formação do aluno às transformações tecnológicas, às
+        necessidades do mercado e à revolução do conhecimento do século XXI.
+        Proporcionamos uma formação profissional de alta qualidade, fornecendo a
+        base para que os alunos possam se renovar e permanecerem atualizados num
+        mundo em constante transformação. Nosso compromisso é, portanto,
+        oferecer ensino de excelência adequado às novas realidades do Brasil e
+        do mundo. Antes de tudo, trabalhamos incansavelmente para:
+        <Lista>
+          <li>
+            <BsCodeSlash size="30" color="#f45905"/> Preparar nossos alunos para uma vida profissional de sucesso.
+          </li>
+          <br/>
+          <li>
+          <BsCodeSlash size="30" color="#f45905"/> Transmitir e cultivar trabalho dedicado, solidariedade,
+            honestidade, lealdade e respeito à diversidade;
+          </li>
+          <br/>
+          <li>
+          <BsCodeSlash size="30" color="#f45905"/> Formar cidadãos plenos, capazes de ajudar a transformar o Brasil em
+            um país economicamente próspero, socialmente justo e democrático.
+          </li>
+        </Lista>
+       
       </TextoInstitucional>
-
+      <DivImg>
+        <Img src={foto}></Img>
+      </DivImg>
       <DivCards>
         <CardQuem>
           <Icone2 src={foco}></Icone2>
@@ -76,7 +80,6 @@ Para inovar o ensino universitário e capacitar os alunos para enfrentar os desa
           </TextoCards>
         </CardQuem>
       </DivCards>
-      <Img src={foto}></Img>
     </div>
   );
 }
@@ -85,17 +88,20 @@ const TituloInstitucional = styled.h1`
   text-align: center;
   color: #001b44;
   font-size: 50px;
-  margin-bottom: 80px;
-  margin-top: 70px;
+  margin: 70px 0px 50px 0px;
+  text-shadow: 1px 1px 4px var(--navy);
 `;
+
+const Lista = styled.ul`
+margin-top: 30px;
+list-style: none;
+`
 
 const TextoInstitucional = styled.p`
   text-align: center;
-  color: #001b44;
-  font-size: 20px;
-  margin-bottom: 80px;
-  margin-left: 80px;
-  margin-right: 80px;
+  color: var(--navy);
+  font-size: 25px;
+  margin: 0px 150px 0px 150px;
 `;
 
 const Icone = styled.img`
@@ -113,7 +119,6 @@ const DivCards = styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: var(--navy);
-  
 `;
 
 const CardQuem = styled.div`
@@ -137,10 +142,14 @@ const TextoCards = styled.p`
   line-height: 1.2rem;
 `;
 
+const DivImg = styled.div`
+  text-align: center;
+  height: 438px
+`
 
 const Img = styled.img`
-height: 300px;
-width: 100%;
-`
+  height: 500px;
+  width: 60%;
+`;
 
 export default QuemSomos;
