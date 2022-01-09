@@ -27,7 +27,6 @@ const Principal = styled.section`
   flex-direction: column;
   flex-wrap: wrap;
 `;
-
 const Titulo = styled.div`
   display: flex;
   flex-direction: column;
@@ -35,7 +34,6 @@ const Titulo = styled.div`
   align-items: center;
   width: 60%;
 `;
-
 const Nome = styled.h2`
   align-self: start;
   font-size: 40px;
@@ -43,14 +41,12 @@ const Nome = styled.h2`
   margin: 20px;
   text-shadow: 1px 1px 4px var(--yellow);
 `;
-
 const P = styled.p`
   align-self: start;
   color: white;
   margin: 20px;
   font-size: 20px;
 `;
-
 const Img = styled.img`
   align-self: end;
   height: 250px;

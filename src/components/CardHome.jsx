@@ -5,7 +5,7 @@ function CardHome() {
   return (
     <DivMain>
       <Ead>
-      <Titulo>EAD</Titulo>
+        <Titulo>EAD</Titulo>
         <Linha />
         <Texto>Lorem epsum mussum</Texto>
       </Ead>
@@ -26,11 +26,10 @@ function CardHome() {
 }
 
 const DivMain = styled.main`
-    display: flex;
-    justify-content: space-around;
-    background-color: #adb5bd;
+  display: flex;
+  justify-content: space-around;
+  background-color: #adb5bd;
 `;
-
 const Ead = styled.div`
   text-align: center;
   border-radius: 10px;
@@ -42,7 +41,6 @@ const Ead = styled.div`
   box-shadow: 10px 5px 5px gray;
   border: 2px solid darkorange;
   margin-bottom: 50px;
-
 `;
 const Flex = styled.div`
   text-align: center;
@@ -54,7 +52,6 @@ const Flex = styled.div`
   background-color: #2a1a5e;
   box-shadow: 10px 5px 5px gray;
   border: 2px solid darkorange;
-
 `;
 const Presencial = styled.div`
   text-align: center;
@@ -66,7 +63,6 @@ const Presencial = styled.div`
   background-color: #2a1a5e;
   box-shadow: 10px 5px 5px gray;
   border: 2px solid darkorange;
-
 `;
 const Titulo = styled.h1`
   font-size: 40px;
@@ -83,7 +79,6 @@ const Linha = styled.div`
   border: 0.1rem solid #badcf5;
   text-align: center;
   margin-bottom: 3rem;
-  
 `;
 
 export default CardHome;
