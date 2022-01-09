@@ -41,13 +41,11 @@ width: 60%;
 display: flex;
 align-items: center;
 justify-content:space-between;
-padding: 20px
+padding: 20px;
 cursor: pointer;
 &:hover {
   color: var(yellow);
  
-
-
 `
 const StyledLink = styled(Link)`
   font-size: 20px;
@@ -64,6 +62,5 @@ const ImgLogo = styled.img`
 width: 270px;
 height: 100px;
 `;
-
   
 export default Header
