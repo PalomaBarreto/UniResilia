@@ -87,7 +87,7 @@ const Icone2 = styled.img`
 `;
 const DivCards = styled.div`
   display: flex;
-  align-itens: center;
+  align-items: center;
   justify-content: space-around;
   background-color: #2a1a5e;
   margin-bottom: 150px;
