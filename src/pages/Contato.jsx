@@ -34,9 +34,7 @@ const Container = styled.section`
   flex-direction: row;
   justify-content: space-evenly;
 `;
-
 const ImgContato = styled.img``;
-
 const Form = styled.section`
   display: flex;
   flex-direction: column;
