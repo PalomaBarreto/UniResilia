@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
@@ -29,4 +30,14 @@ export default function AlunoById() {
             <p>Aluno</p>
         )
     }
+=======
+import React from 'react'
+
+export default function AlunoById() {
+    return (
+        <div>
+            <p>AlunoByID</p>
+        </div>
+    )
+>>>>>>> 24f8b7430cc3bd46ab2861ae2784b0226c901043
 }
