@@ -7,19 +7,21 @@ function CardHome() {
       <Ead>
         <Titulo>EAD</Titulo>
         <Linha />
-        <Texto>Lorem epsum mussum</Texto>
+        <Texto>100% das aulas online e com mensalidade fixa</Texto>
       </Ead>
 
       <Flex>
         <Titulo>Flex</Titulo>
         <Linha />
-        <Texto>Lorem epsum mussum</Texto>
+        <Texto>Até 2 dias de aulas
+presenciais por semana</Texto>
       </Flex>
 
       <Presencial>
         <Titulo>Presencial</Titulo>
         <Linha />
-        <Texto>Lorem epsum mussum</Texto>
+        <Texto>4 a 5 dias de aulas
+presenciais por semana</Texto>
       </Presencial>
     </DivMain>
   );
@@ -28,7 +30,6 @@ function CardHome() {
 const DivMain = styled.main`
   display: flex;
   justify-content: space-around;
-  background-color: #adb5bd;
 `;
 const Ead = styled.div`
   text-align: center;
@@ -67,10 +68,10 @@ const Presencial = styled.div`
 const Titulo = styled.h1`
   font-size: 40px;
   margin-bottom: 20px;
-  color: #f45905;
+  color: #ffffff;
 `;
 const Texto = styled.p`
-  color: #badcf5;
+  color: #ffffff;
   font-size: 1.4rem;
   line-height: 1.8rem;
 `;
