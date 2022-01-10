@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Intro
-        description={"Transforme oportunidades em possibilidades."}
+        description={"Transforme oportunidades em possibilidades. \n Use sua nota do ENEM. "}
         title={"A melhor universidade Tech do Brasil!"}
       />
       <Depoimentos/>
