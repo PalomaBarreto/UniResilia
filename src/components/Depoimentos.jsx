@@ -17,9 +17,9 @@ export default function Depoimentos() {
           <Foto src={Aluno}></Foto>
           <TextoCards>
             Aproveito a oportunidade, para registrar a minha satisfação com a
-            Instituição Resilia. Desde o atendimento envolvendo
-            coordenação/gestor do polo até o corpo docente, em especial a
-            professora Denise Cardoso. Todas as vezes que precisei de alguma
+            Resilia. Desde o atendimento envolvendo
+            coordenação/gestor do polo até o corpo docente, em especial ao
+            facilitador William Bradley e Felipe Ferreira. Todas as vezes que precisei de alguma
             orientação, ajuda ou simplesmente uma informação, sempre encontrei
             profissionais dispostos a me ajudarem. Pode ter a certeza que isso
             faz a diferença! Se eu tiver que indicar alguma Instituição a
@@ -34,13 +34,13 @@ export default function Depoimentos() {
           <Foto src={Aluno1}></Foto>
           <TextoCards>
             Prezado Reitor, gostaria de parabenizá-lo pela organização do curso
-            de Pós-Graduação de processo civil, principalmente em relação a
-            gestora do curso Dra. Rita e do tutor Juvenal, que, apesar de rígido
+            de desevolvimento Web dev Full-Stack, principalmente em relação a
+            facilitadora Cinthia e o Alan Kildare, que apesar de rígido
             com os trabalhos, tem uma organização e preocupação com os alunos no
             desenrolar das tarefas. Mediante o exposto, sinto-me muito
             satisfeito com a escolha desse grupo e só tenho a agradecer a todos
             pela atenção e colaboração para o aprimoramento e desenvolvimento da
-            minha carreita.
+            minha carreira.
             <NomeAluno>Giovanna Rossi</NomeAluno>
             Aluno turma 08 - 2021
           </TextoCards>
@@ -49,8 +49,8 @@ export default function Depoimentos() {
           <Foto src={Aluno2}></Foto>
           <TextoCards>
             Gostaria de registrar meus agradecimentos a toda equipe da
-            Pós-Graduação (EaD) da Faculdade Resilia, em especial à Antônia Mota
-            e ao orientador Juvenal Bacellar Neto que foram incansáveis para o
+            Facilitação da Faculdade Resilia, em especial à Cinthia Cantú
+            e a orientadora Karlla que foram incansáveis para o
             sucesso na conclusão do meu curso. Sinto-me realizada com a escolha
             dessa faculdade para fazer minha especialização, visto que, o
             atendimento dos colaboradores e o conteúdo do material didático são
@@ -63,7 +63,7 @@ export default function Depoimentos() {
         <CardAluno>
           <Foto src={Aluno3}></Foto>
           <TextoCards>
-            Durante os 7 (sete) meses de curso, a gestora Solange Brunelli (Rio
+            Durante os 6 (seis) meses de curso, o facilitador Gabriel Izoton(Rio
             de Janeiro - RJ) ofereceu todo apoio que o estudante precisa para
             concluir a graduação devidamente orientado. Foram diversas trocas de
             informações que são imprescindíveis para o aluno buscar o
