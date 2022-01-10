@@ -14,11 +14,7 @@ export async function getStudents(){
         res =>{
             return res.json();
         }
-    ).then(
-        data => data.students
     )
 
-    return data;
+    return data.students;
 }
-
-console.log(getStudents());
