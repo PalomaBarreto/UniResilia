@@ -5,32 +5,45 @@ function CardsUnidadades(props) {
   return (
     <Unidades>
       <ImgUnidade src={props.img} />
-      <TextoUni>{props.texto}</TextoUni>
+      <DivDescri>
+        <TituloUni>{props.titulo}</TituloUni>
+        <TextoUni>{props.texto}</TextoUni>
+      </DivDescri>
     </Unidades>
   );
 }
 
 const Unidades = styled.div`
-  margin-top: 10%;
-  margin-bottom: 200px;
+  background: var(--yellow);
+  margin: 0 2% 5% 2%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid darkorange;
+  box-shadow: 10px 5px 5px gray;
 `;
 const ImgUnidade = styled.img`
-  width: 500px;
-  height: 400px;
-  border-radius: 17px;
-  border: 5px solid darkorange;
-  box-shadow: 10px 5px 5px gray;
+  width: 400px;
+  height: 300px;
+  box-sizing: border-box;
 `;
-const TextoUni = styled.p`
-  margin-top: 10%;
+
+const DivDescri = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const TituloUni = styled.p`
+  width: 800px;
+  margin: 30px 0 0 10px;
   font-size: 25px;
   font-weight: bold;
-  border: 4px solid darkorange;
   border-radius: 15px;
-  box-shadow: 10px 5px 5px gray;
+`;
+
+const TextoUni = styled.p`
+  width: 800px;
+  margin: 30px 0 0 10px;
+  font-size: 22px;
+  border-radius: 15px;
 `;
 
 export default CardsUnidadades;

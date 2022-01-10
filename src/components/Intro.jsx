@@ -45,7 +45,8 @@ const P = styled.p`
   align-self: start;
   color: white;
   margin: 20px;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
 `;
 const Img = styled.img`
   align-self: end;

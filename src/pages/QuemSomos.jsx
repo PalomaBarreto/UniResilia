@@ -13,7 +13,7 @@ function QuemSomos() {
     <div>
       <Intro
         description={"Aqui você encontra o caminho certo para um futuro brilhante."}
-        title={"A melhor universidade Tech do Brasil!"}
+        title={"Sobre a Resilia"}
       />
       <TituloInstitucional>Institucional</TituloInstitucional>
       <TextoInstitucional>

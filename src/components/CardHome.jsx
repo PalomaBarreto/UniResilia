@@ -28,6 +28,7 @@ function CardHome() {
 const DivMain = styled.main`
   display: flex;
   justify-content: space-around;
+  margin-bottom: 70px;
 `;
 const Ead = styled.div`
   text-align: center;
