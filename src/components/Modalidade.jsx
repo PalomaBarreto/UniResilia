@@ -19,12 +19,11 @@ const DivCards = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
-  margin-bottom: 15px;
+  margin-bottom: 70px;
 `;
 
 const Titulo = styled.h1`
-  margin: 70px 0px 20px 0px;
+  margin: 50px 0px 20px 0px;
   font-size: 50px;
   color: #001b44;
   text-shadow: 1px 1px 4px var(--navy);
