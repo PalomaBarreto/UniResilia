@@ -13,15 +13,13 @@ function CardHome() {
       <Flex>
         <Titulo>Flex</Titulo>
         <Linha />
-        <Texto>Até 2 dias de aulas
-presenciais por semana</Texto>
+        <Texto>Até 2 dias de aulas presenciais por semana</Texto>
       </Flex>
 
       <Presencial>
         <Titulo>Presencial</Titulo>
         <Linha />
-        <Texto>4 a 5 dias de aulas
-presenciais por semana</Texto>
+        <Texto>4 a 5 dias de aulas presenciais por semana</Texto>
       </Presencial>
     </DivMain>
   );

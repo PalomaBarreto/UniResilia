@@ -5,7 +5,7 @@ import Aluno1 from "../assets/aluno2.jpg";
 import Aluno2 from "../assets/aluno3.jpg";
 import Aluno3 from "../assets/aluno4.jpg";
 
-export default function Home() {
+export default function Depoimentos() {
   return (
     <div>
       <TituloDepoimentos>Conheça nossos #Resilientes</TituloDepoimentos>
@@ -23,7 +23,8 @@ export default function Home() {
             orientação, ajuda ou simplesmente uma informação, sempre encontrei
             profissionais dispostos a me ajudarem. Pode ter a certeza que isso
             faz a diferença! Se eu tiver que indicar alguma Instituição a
-            alguém, a Resilia está na minha lista. Parabéns pela Equipe!<br></br>
+            alguém, a Resilia está na minha lista. Parabéns pela Equipe!
+            <br></br>
             <NomeAluno>Ravel Nogueira</NomeAluno>
             Aluno turma 08 - 2021
           </TextoCards>
@@ -48,12 +49,12 @@ export default function Home() {
           <Foto src={Aluno2}></Foto>
           <TextoCards>
             Gostaria de registrar meus agradecimentos a toda equipe da
-            Pós-Graduação (EaD) da Faculdade Resilia, em especial à Antônia
-            Mota e ao orientador Juvenal Bacellar Neto que foram incansáveis
-            para o sucesso na conclusão do meu curso. Sinto-me realizada com a
-            escolha dessa faculdade para fazer minha especialização, visto que,
-            o atendimento dos colaboradores e o conteúdo do material didático
-            são excelentes. Tudo que precisei durante a realização do curso foi
+            Pós-Graduação (EaD) da Faculdade Resilia, em especial à Antônia Mota
+            e ao orientador Juvenal Bacellar Neto que foram incansáveis para o
+            sucesso na conclusão do meu curso. Sinto-me realizada com a escolha
+            dessa faculdade para fazer minha especialização, visto que, o
+            atendimento dos colaboradores e o conteúdo do material didático são
+            excelentes. Tudo que precisei durante a realização do curso foi
             prontamente atendido e respondido.
             <NomeAluno>Paloma Barreto</NomeAluno>
             Aluno turma 08 - 2021
@@ -62,8 +63,8 @@ export default function Home() {
         <CardAluno>
           <Foto src={Aluno3}></Foto>
           <TextoCards>
-            Durante os 7 (sete) meses de curso, a gestora Solange Brunelli
-            (Rio de Janeiro - RJ) ofereceu todo apoio que o estudante precisa para
+            Durante os 7 (sete) meses de curso, a gestora Solange Brunelli (Rio
+            de Janeiro - RJ) ofereceu todo apoio que o estudante precisa para
             concluir a graduação devidamente orientado. Foram diversas trocas de
             informações que são imprescindíveis para o aluno buscar o
             conhecimento necessário ao aprimoramento intelectual e profissional.
@@ -124,7 +125,7 @@ const TextoCards = styled.p`
 `;
 
 const NomeAluno = styled.p`
-font-weight: bold;
-font-size: 18px;
-margin-top:10px
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
 `;
