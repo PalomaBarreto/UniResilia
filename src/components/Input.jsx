@@ -9,7 +9,7 @@ function Input(props) {
         type={props.type}
         name={props.name}
         value={props.value}
-        onBlur={(e)=>{
+        onChange={(e)=>{
           props.handler(props.nome, e.target.value);
         }}
       />

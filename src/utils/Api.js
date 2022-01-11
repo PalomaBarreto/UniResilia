@@ -56,7 +56,6 @@ export async function deleteStudentById(id) {
 
 export async function postStudent(aluno) {
     const {nome, nascimento, cpf, email, carreira, registro} = aluno
-    console.log('log fuleiro acima ^^');
     const data = await fetch(
         `${url}`, {
             method: 'POST',
