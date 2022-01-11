@@ -6,6 +6,10 @@ import Input from './Input';
 import Aluno from './Aluno';
 import Loading from './Loading';
 
+const Div = styled.div`
+    margin-bottom: 60px;
+`;
+
 const Button = styled.button`
     width: 90px;
     height: 45px;
@@ -46,10 +50,10 @@ export default function AlunoById() {
     
     return (
         <div>
-            <div>
+            <Div>
                 <Input type={'number'} handler={handlerInput}>Id do aluno:</Input>
                 <Button onClick={handlerClick}>Pesquisar</Button>
-            </div>
+            </Div>
             
             {isLoading ?
                 <Loading />
