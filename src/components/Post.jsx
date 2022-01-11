@@ -2,18 +2,37 @@ import React from "react";
 import Input from "./Input";
 import Button from "./Button";
 import styled from "styled-components";
+import { postStudent } from "../utils/Api";
 
-function Post()
-{
+function Post(){
+  const Obj = {
+    nome: '',
+    nascimento: '',
+    cpf: '',
+    email: '',
+    carreira: '',
+    registro: '',
+  };
+
+  function handlerOnBlur(key, valor){
+    Obj[key] = valor;
+  }
+
+  function handlerSubmit(){
+    postStudent({...Obj}).then((res)=>{
+      console.log(res);
+      //window.location.reload();
+    })
+  }
   return(
     <Form>
-      <Input type={"text"}>Nome do Aluno: </Input>
-      <Input type={"date"}>Data de Nascimento: </Input>
-      <Input type={"text"}>CPF: </Input>
-      <Input type={"text"}>E-mail: </Input>
-      <Input type={"text"}>Curso: </Input>
-      <Input type={"date"}>Data de Resgistro: </Input>
-      <Button type={"submit"}>Adicionar!</Button>
+      <Input type={"text"} handler={handlerOnBlur} nome={'nome'}>Nome do Aluno: </Input>
+      <Input type={"date"} handler={handlerOnBlur} nome={'nascimento'}>Data de Nascimento: </Input>
+      <Input type={"text"} handler={handlerOnBlur} nome={'cpf'}>CPF: </Input>
+      <Input type={"text"} handler={handlerOnBlur} nome={'email'}>E-mail: </Input>
+      <Input type={"text"} handler={handlerOnBlur} nome={'carreira'}>Curso: </Input>
+      <Input type={"date"} handler={handlerOnBlur} nome={'registro'}>Data de Resgistro: </Input>
+      <Button type={"submit"} handler={handlerSubmit}>Adicionar!</Button>
     </Form>
   )    
 }

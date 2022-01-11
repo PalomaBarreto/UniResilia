@@ -5,6 +5,8 @@ import Button from "../components/Button";
 import Post from "../components/Post";
 import Delete from "../components/Delete";
 import Intro from "../components/Intro";
+import Alunos from "../components/Alunos";
+import AlunoById from "../components/AlunoById";
 
 function AreaProf() {
   return (
@@ -19,8 +21,12 @@ function AreaProf() {
 
         <DivBotoes>
           <Ttl>Escolha uma ação:</Ttl>
-          <Button>Buscar Alunos</Button>
-          <Button>Buscar por ID</Button>
+          <NavLink to='alunos'>
+            <Button>Buscar Alunos</Button>
+          </NavLink>
+          <NavLink to='aluno-by-id'>
+            <Button>Buscar por ID</Button>
+          </NavLink>
           <NavLink to="post">
             <Button>Adicionar</Button>
           </NavLink>
@@ -30,6 +36,8 @@ function AreaProf() {
         </DivBotoes>
 
         <Routes>
+          <Route path='/alunos' element={<Alunos/>} />
+          <Route path='aluno-by-id' element={<AlunoById/>} />
           <Route path="/post" element={<Post/>} />
           <Route path="/delete" element={<Delete/>} />
         </Routes>
