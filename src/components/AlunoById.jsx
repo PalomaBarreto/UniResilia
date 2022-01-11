@@ -1,32 +1,55 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { getStudentById } from '../utils/Api';
 import Input from './Input';
 import Aluno from './Aluno';
 import Loading from './Loading';
 
+const Button = styled.button`
+    width: 90px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f45905;
+    color: #ffffff;
+    font-size: 18px;
+    float: right;
+
+    &:hover{
+        background-color: #ffffff;
+        color: #f42d05;
+    }
+
+    &:active{
+        background-color: #2A1A5E;
+    }
+`;
+
 export default function AlunoById() {
-    const [id, setId] = useState(0);
+    let id = 0;
     const [aluno, setAluno] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
-    function handler(key, value){
-        setId(value);
-        console.log(id);
+    function handlerInput(key, value){
+        id = value;
     }
 
-    useEffect(() => {
+    function handlerClick(){
+        setIsLoading(true);
         getStudentById(id).then((res) => {
             setAluno(res.req);
             setIsLoading(false);
-        });
-    }, [isLoading])
+        })
+    }
 
     
     return (
         <div>
-            <Input type={'number'} handler={handler}>Id do aluno:</Input>
+            <div>
+                <Input type={'number'} handler={handlerInput}>Id do aluno:</Input>
+                <Button onClick={handlerClick}>Pesquisar</Button>
+            </div>
             
             {isLoading ?
                 <Loading />
