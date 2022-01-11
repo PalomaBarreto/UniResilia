@@ -1,5 +1,6 @@
 <h1 align="center">UniResilia 🏫🖥</h1>
 <p> Projeto de aplicação web onde o objetivo era utilizar a biblioteca React.JS e consumir uma API REST. Além disso, o grupo optou por criar componentes funcionais e usar styled components para estilização das páginas.
+<p>Você pode acessar nosso site <a href="https://uniresilia.netlify.app/">aqui</a>.
 <p>Desenvolvido durante o módulo 5 do curso de Web Dev Full Stack da <a href="https://www.resilia.work/)">Resilia Educação</a>.
   
 <h2 align="center">Status do Projeto 📆 </h2>
