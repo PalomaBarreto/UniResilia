@@ -13,7 +13,14 @@ const LiCard = styled.li`
     border-radius: 0 30px 0 30px;
 
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.01);
+        animation: ihul 1.5s;
+        box-shadow: 15px 15px 10px #f45905;
+    }
+
+    @keyframes ihul{
+        0% {box-shadow: 15px 15px 10px #2A1A5E;}
+        100% {box-shadow: 15px 15px 10px #f45905;}
     }
 `;
 
@@ -35,10 +42,14 @@ const Delete = styled.button`
         background-color: #ffffff;
         color: #f42d05;
     }
+
+    &:active{
+        background-color: #2A1A5E;
+    }
 `;
 
-function handlerDelete(){
-
+function handlerDelete() {
+    console.log('tnc')
 }
 export default function Aluno({ aluno: { ID, NAME, BIRTHDATE, CPF, EMAIL, CAREER, REGISTRATIONDATE } }) {
 
