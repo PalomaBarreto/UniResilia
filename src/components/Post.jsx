@@ -3,7 +3,7 @@ import Input from "./Input";
 import Button from "./Button";
 import styled from "styled-components";
 import { postStudent } from "../utils/Api";
-import { BsWindowSidebar } from "react-icons/bs";
+
 function Post(){
   const Obj = {
     nome: '',
