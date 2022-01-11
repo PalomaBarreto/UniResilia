@@ -28,7 +28,7 @@ export async function getStudentById(id) {
             }
         }
     ).then(
-        res =>{
+        res => {
             return res.json();
         }
     )
@@ -36,7 +36,7 @@ export async function getStudentById(id) {
     return data
 }
 
-export async function deleteStudentById(id){
+export async function deleteStudentById(id) {
     const data = await fetch(
         `${url}/${id}`, {
             method: 'DELETE',
@@ -46,7 +46,7 @@ export async function deleteStudentById(id){
             }
         }
     ).then(
-        res =>{
+        res => {
             return res.json();
         }
     )
@@ -54,7 +54,7 @@ export async function deleteStudentById(id){
     return data;
 }
 
-export async function postStudent(nome, nascimento, cpf, email, carreira, registro){
+export async function postStudent(nome, nascimento, cpf, email, carreira, registro) {
     const data = await fetch(
         `${url}`, {
             method: 'POST',
@@ -63,16 +63,16 @@ export async function postStudent(nome, nascimento, cpf, email, carreira, regist
                 'Content-Type': 'application/json'
             },
             body: {
-			    NAME: nome,
-			    BIRTHDATE: nascimento,
-			    CPF: cpf,
-			    EMAIL: email,
-			    CAREER: carreira,
-			    REGISTRATIONDATE: registro
+                name: nome,
+                CPF: cpf,
+                career: carreira,
+                birthDate: nascimento,
+                email: email,
+                registrationDate: registro
             }
         }
     ).then(
-        res =>{
+        res => {
             return res.json();
         }
     )
