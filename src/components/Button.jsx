@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Button(props) {
   return (
-    <Btn onClick={props.click} type={props.type}>
+    <Btn onClick={props.handler} type={props.type}>
       {props.children}
     </Btn>
   );

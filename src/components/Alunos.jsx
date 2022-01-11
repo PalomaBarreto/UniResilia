@@ -37,13 +37,7 @@ export default function Alunos() {
                 {alunos.map((aluno, index) => {
                     return (
                         <Aluno
-                            // id={aluno.ID}
-                            // nome={aluno.NAME}
-                            // nascimento={aluno.BIRTHDATE}
-                            // carreira={aluno.CAREER}
-                            // cpf={aluno.CPF}
-                            // email={aluno.EMAIL}
-                            // registro={aluno.REGISTRATIONDATE}
+                            key={aluno.ID}
                             aluno={aluno}
                         />
                     );
@@ -52,14 +46,3 @@ export default function Alunos() {
         )
     }
 }
-
-/* <Aluno
-    id={aluno.ID}
-    nome={aluno.NAME}
-    nascimento={aluno.BIRTHDATE}
-    carreira={aluno.CAREER}
-    cpf={aluno.CPF}
-    email={aluno.EMAIL}
-    registro={aluno.REGISTRATIONDATE}
-    aluno={aluno}
-/> */

@@ -1,5 +1,7 @@
 import React from 'react'
+import { BsWindowSidebar } from 'react-icons/bs';
 import styled from 'styled-components';
+import { deleteStudentById } from '../utils/Api';
 
 const LiCard = styled.li`
     width: 350px;
@@ -9,6 +11,8 @@ const LiCard = styled.li`
     flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
     box-shadow: 15px 15px 10px #2A1A5E;
     border-radius: 0 30px 0 30px;
 
@@ -37,6 +41,7 @@ const Delete = styled.button`
     border: none;
     background-color: #f42d05;
     color: #ffffff;
+    font-size: 15px;
 
     &:hover{
         background-color: #ffffff;
@@ -48,13 +53,16 @@ const Delete = styled.button`
     }
 `;
 
-function handlerDelete() {
-    console.log('tnc')
-}
 export default function Aluno({ aluno: { ID, NAME, BIRTHDATE, CPF, EMAIL, CAREER, REGISTRATIONDATE } }) {
 
+    function handlerDelete() {
+        deleteStudentById(ID).then((res)=>{
+            window.location.reload();
+        })
+    }
+
     return (
-        <LiCard key={ID}>
+        <LiCard>
             <Nome>{NAME}</Nome>
             <p>CPF: {CPF}.</p>
             <p>Data de nascimento: {BIRTHDATE}.</p>
