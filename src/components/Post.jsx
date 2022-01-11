@@ -20,7 +20,8 @@ function Post(){
 
   function handlerSubmit(){
     postStudent({...Obj}).then((res)=>{
-      window.location.reload();
+      console.log(res);
+      //window.location.reload();
     })
   }
   return(

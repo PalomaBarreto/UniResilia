@@ -54,7 +54,9 @@ export async function deleteStudentById(id) {
     return data;
 }
 
-export async function postStudent(nome, nascimento, cpf, email, carreira, registro) {
+export async function postStudent(aluno) {
+    const {nome, nascimento, cpf, email, carreira, registro} = aluno
+    console.log('log fuleiro acima ^^');
     const data = await fetch(
         `${url}`, {
             method: 'POST',
@@ -62,18 +64,22 @@ export async function postStudent(nome, nascimento, cpf, email, carreira, regist
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: {
+            body: JSON.stringify({
                 name: nome,
                 CPF: cpf,
                 career: carreira,
                 birthDate: nascimento,
                 email: email,
                 registrationDate: registro
-            }
+            })
         }
     ).then(
         res => {
             return res.json();
+        }
+    ).catch(
+        (err)=>{
+            console.log(err.message);
         }
     )
 

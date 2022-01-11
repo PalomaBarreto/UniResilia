@@ -32,7 +32,10 @@ export default function AlunoById() {
             <div>
                 {aluno.map(aluno => {
                     return (
-                        <Aluno aluno={aluno} />
+                        <Aluno
+                            key={aluno.ID}
+                            aluno={aluno}
+                        />
                     )
                 })}
             </div>
