@@ -30,16 +30,16 @@ function AreaProf() {
           <NavLink to="post">
             <Button>Adicionar</Button>
           </NavLink>
-          <NavLink to="delete">
+          {/* <NavLink to="delete">
             <Button>Deletar</Button>
-          </NavLink>
+          </NavLink> */}
         </DivBotoes>
 
         <Routes>
           <Route path='/alunos' element={<Alunos/>} />
           <Route path='aluno-by-id' element={<AlunoById/>} />
           <Route path="/post" element={<Post/>} />
-          <Route path="/delete" element={<Delete/>} />
+          {/* <Route path="/delete" element={<Delete/>} /> */}
         </Routes>
       </Caixa>
     </div>
