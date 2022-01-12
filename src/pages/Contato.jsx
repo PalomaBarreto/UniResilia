@@ -30,11 +30,16 @@ function Contato() {
 }
 
 const Container = styled.section`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
 `;
-const ImgContato = styled.img``;
+const ImgContato = styled.img`
+  margin-left: 40px;
+`;
+
 const Form = styled.section`
   display: flex;
   flex-direction: column;
