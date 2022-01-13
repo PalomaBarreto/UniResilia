@@ -84,3 +84,33 @@ export async function postStudent(aluno) {
 
     return data;
 }
+
+export async function putStudent(aluno, ID) {
+    const {nome, nascimento, cpf, email, carreira} = aluno
+    const data = await fetch(
+        `${url}/${ID}`, {
+            method: 'PUT',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: nome,
+                CPF: cpf,
+                career: carreira,
+                birthDate: nascimento,
+                email: email
+            })
+        }
+    ).then(
+        res => {
+            return res.json();
+        }
+    ).catch(
+        (err)=>{
+            console.log(err.message);
+        }
+    )
+
+    return data;
+}

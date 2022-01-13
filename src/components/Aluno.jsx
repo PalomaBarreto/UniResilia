@@ -1,5 +1,8 @@
 import React from 'react'
+import { useState } from 'react';
 import styled from 'styled-components';
+import Backdrop from './Backdrop';
+import AlunoUpdate from './AlunoUpdate';
 import { deleteStudentById } from '../utils/Api';
 
 const LiCard = styled.li`
@@ -31,6 +34,34 @@ const Nome = styled.p`
     font-weight: 600;
 `;
 
+const Buttons = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: right;
+`;
+
+const Update = styled.button`
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin: 0 10px 5px 0;
+    border: none;
+    background-color: #2A1A5E;
+    color: #ffffff;
+    font-size: 15px;
+
+    &:hover{
+        background-color: #ffffff;
+        color: #f42d05;
+    }
+
+    &:active{
+        background-color: #f42d05;
+        color: #2A1A5E;
+    }
+`;
+
 const Delete = styled.button`
     width: 70px;
     height: 30px;
@@ -53,11 +84,20 @@ const Delete = styled.button`
 `;
 
 export default function Aluno({ aluno: { ID, NAME, BIRTHDATE, CPF, EMAIL, CAREER, REGISTRATIONDATE } }) {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
     function handlerDelete() {
-        deleteStudentById(ID).then((res)=>{
+        deleteStudentById(ID).then((res) => {
             window.location.reload();
         })
+    }
+
+    function openModal() {
+        setModalIsOpen(true)
+    }
+
+    function closeModal() {
+        setModalIsOpen(false);
     }
 
     return (
@@ -68,7 +108,23 @@ export default function Aluno({ aluno: { ID, NAME, BIRTHDATE, CPF, EMAIL, CAREER
             <p>Email: {EMAIL}.</p>
             <p>Admissão: {REGISTRATIONDATE}.</p>
             <p>Carreira: {CAREER}.</p>
-            <Delete onClick={handlerDelete}>Deletar</Delete>
+            <Buttons>
+                <Delete onClick={handlerDelete}>Deletar</Delete>
+                <Update onClick={openModal}>Atualizar</Update>
+            </Buttons>
+
+            {modalIsOpen &&
+                <AlunoUpdate
+                    onCancel={closeModal}
+                    ID={ID}
+                    NAME={NAME}
+                    BIRTHDATE={BIRTHDATE}
+                    CPF={CPF}
+                    EMAIL={EMAIL}
+                    CAREER={CAREER}
+                    REGISTRATIONDATE={REGISTRATIONDATE}
+                />}
+            {modalIsOpen && <Backdrop onClick={closeModal} />}
         </LiCard>
     )
 }
