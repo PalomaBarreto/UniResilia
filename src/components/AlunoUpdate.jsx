@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRef } from 'react';
 import styled from 'styled-components';
 import { putStudent } from '../utils/Api';
 import Input from './Input';
@@ -70,6 +71,8 @@ const Update = styled.button`
 `;
 
 export default function AlunoUpdate(props) {
+    const pretoRef = useRef();
+
     const Obj = {
         nome: '',
         nascimento: '',
@@ -89,8 +92,13 @@ export default function AlunoUpdate(props) {
         })
     }
 
+    function onPretoClick(e){
+        if(pretoRef.current === e.target){
+            props.onCancel();
+        }
+    }
     return (
-        <Preto>
+        <Preto ref={pretoRef} onClick={onPretoClick}>
             <DivUpdate>
                 <Input type={"text"} value={props.NAME} handler={handlerOnBlur} nome={'nome'}>Nome do Aluno: </Input>
                 <Input type={"text"} value={props.BIRTHDATE} handler={handlerOnBlur} nome={'nascimento'}>Data de Nascimento: </Input>

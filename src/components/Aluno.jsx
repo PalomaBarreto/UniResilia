@@ -126,7 +126,6 @@ export default function Aluno({ aluno: { ID, NAME, BIRTHDATE, CPF, EMAIL, CAREER
                     CAREER={CAREER}
                     REGISTRATIONDATE={REGISTRATIONDATE}
                 />}
-            {/* {modalIsOpen && <Backdrop onClick={closeModal} />} */}
         </>
     )
 }
