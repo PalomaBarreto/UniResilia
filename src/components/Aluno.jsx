@@ -101,6 +101,7 @@ export default function Aluno({ aluno: { ID, NAME, BIRTHDATE, CPF, EMAIL, CAREER
     }
 
     return (
+        <>
         <LiCard>
             <Nome>{NAME}</Nome>
             <p>CPF: {CPF}.</p>
@@ -112,6 +113,7 @@ export default function Aluno({ aluno: { ID, NAME, BIRTHDATE, CPF, EMAIL, CAREER
                 <Delete onClick={handlerDelete}>Deletar</Delete>
                 <Update onClick={openModal}>Atualizar</Update>
             </Buttons>
+        </LiCard>
 
             {modalIsOpen &&
                 <AlunoUpdate
@@ -124,7 +126,7 @@ export default function Aluno({ aluno: { ID, NAME, BIRTHDATE, CPF, EMAIL, CAREER
                     CAREER={CAREER}
                     REGISTRATIONDATE={REGISTRATIONDATE}
                 />}
-            {modalIsOpen && <Backdrop onClick={closeModal} />}
-        </LiCard>
+            {/* {modalIsOpen && <Backdrop onClick={closeModal} />} */}
+        </>
     )
 }

@@ -3,17 +3,27 @@ import styled from 'styled-components';
 import { putStudent } from '../utils/Api';
 import Input from './Input';
 
-const Div = styled.div`
+const DivUpdate = styled.div`
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     background-color: white;
     padding: 1rem;
-    text-align: center;
+    //text-align: center;
     width: 30rem;
-    z-index: 10;
+    //margin: auto;
+`;
+
+const Preto = styled.div`
     position: fixed;
-    top: 20vh;
-    left: calc(50% - 15rem);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const Cancelar = styled.button`
@@ -72,23 +82,24 @@ export default function AlunoUpdate(props) {
         Obj[key] = valor;
     }
 
-    function handlerUpdate(){
-        putStudent({...Obj}, props.ID).then((res)=>{
+    function handlerUpdate() {
+        putStudent({ ...Obj }, props.ID).then((res) => {
             console.log(res)
             window.location.reload();
         })
     }
 
     return (
-        <Div>
-            <Input type={"text"} value={props.NAME} handler={handlerOnBlur} nome={'nome'}>Nome do Aluno: </Input>
-            <Input type={"text"} value={props.BIRTHDATE} handler={handlerOnBlur} nome={'nascimento'}>Data de Nascimento: </Input>
-            <Input type={"text"} value={props.CPF} handler={handlerOnBlur} nome={'cpf'}>CPF: </Input>
-            <Input type={"text"} value={props.EMAIL} handler={handlerOnBlur} nome={'email'}>E-mail: </Input>
-            <Input type={"text"} value={props.CAREER} handler={handlerOnBlur} nome={'carreira'}>Curso: </Input>
-
-            <Cancelar onClick={props.onCancel}>Cancelar</Cancelar>
-            <Update onClick={handlerUpdate}>Atualizar</Update>
-        </Div>
+        <Preto>
+            <DivUpdate>
+                <Input type={"text"} value={props.NAME} handler={handlerOnBlur} nome={'nome'}>Nome do Aluno: </Input>
+                <Input type={"text"} value={props.BIRTHDATE} handler={handlerOnBlur} nome={'nascimento'}>Data de Nascimento: </Input>
+                <Input type={"text"} value={props.CPF} handler={handlerOnBlur} nome={'cpf'}>CPF: </Input>
+                <Input type={"text"} value={props.EMAIL} handler={handlerOnBlur} nome={'email'}>E-mail: </Input>
+                <Input type={"text"} value={props.CAREER} handler={handlerOnBlur} nome={'carreira'}>Curso: </Input>
+                <Cancelar onClick={props.onCancel}>Cancelar</Cancelar>
+                <Update onClick={handlerUpdate}>Atualizar</Update>
+            </DivUpdate>
+        </Preto>
     )
 }

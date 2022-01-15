@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const Div = styled.div `
-    position: fixed;
+const Preto = styled.div `
+    
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.75);
     width: 101vw;
@@ -13,6 +13,6 @@ const Div = styled.div `
 
 export default function Backdrop(props){
     return (
-        <Div onClick={props.onClick} />
+        <Preto onClick={props.onClick} />
     );
 }
