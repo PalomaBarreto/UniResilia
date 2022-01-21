@@ -4,7 +4,7 @@
 <p>Desenvolvido durante o módulo 5 do curso de Web Dev Full Stack da <a href="https://www.resilia.work/)">Resilia Educação</a>.
   
 <h2 align="center">Status do Projeto 📆 </h2>
-<p align="center">Em desenvolvimento 🚧</p>
+<p align="center">Finalizado! ✅</p>
   
   
 <h2 align="center">Requisitos 🛠</h2>
